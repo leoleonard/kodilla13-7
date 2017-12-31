@@ -1,0 +1,19 @@
+{
+  "name": "kodilla13-7",
+  "version": "1.0.0",
+  "description": "cat",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "cat"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "stat-mode": "^0.2.2"
+  }
+}
