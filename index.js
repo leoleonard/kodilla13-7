@@ -18,14 +18,12 @@ fs.writeFile('./tekst.txt', 'Gdzie jest kot?', function(err) {
 });
 */
 fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
-    console.log('Dane przed zapisem'.blue);
-    console.log(data);
+    console.log(data.red);
+    console.log("istniejący już tekst");
     fs.appendFile('./tekst.txt', '\nKot Ali jest w kuchni!', function(err) {
         if (err) throw err;
-        console.log('Zapisano!'.blue);
         fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
-            console.log('Dane po zapisie'.blue)
-            console.log(data);
+            console.log(data.blue);
         });
     });
 });
